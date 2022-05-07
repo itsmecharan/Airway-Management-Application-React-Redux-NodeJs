@@ -1,0 +1,420 @@
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-heading {
+  margin-top: 10px;
+  color: white;
+}
+
+.div-main-heading {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.div-carousel {
+  width: 1335px;
+  margin-left: 15px;
+}
+
+.carousel-img {
+  width: 1200px;
+  height: 500px
+}
+
+.div-heading {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.div-content {
+  margin-left: 30px;
+}
+
+.div-seatmap {
+  margin: 4px;
+  border: 2px solid gray;
+  padding: 12px;
+  width: 220px;
+  display: inline-table;
+}
+
+.div-seatmap-btn {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  box-shadow: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.div-seatmap-btn-dummy {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: white;
+}
+
+.div-seatmap-btn-mark-area {
+  margin-left: 50px;
+  display: inline-table;
+}
+
+.div-seatmap-btn-mark {
+  width: 15px;
+  height: 15px;
+  border: 1px solid gray;
+}
+
+.div-seatmap-textcontent {
+  display: inline-table;
+  margin-left: 100px;
+  display: inline-table;
+}
+
+
+.nav-page-btn {
+
+  color: white;
+  border: 2px solid white;
+  padding: 3px;
+  margin-right: 5px;
+}
+
+.nav-page-btn:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #66b2b2;
+}
+
+#passengers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#passengers td,
+#passengers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#passengers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#passengers tr:hover {
+  background-color: #ddd;
+}
+
+#passengers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.login-logout {
+  width: 100px;
+  height: 50px;
+  margin-top: 15px;
+  background-color: #8dd430;
+}
+
+.login-logout:hover {
+  color: black;
+  opacity: 1;
+  background-color: #66b2b2;
+}
+
+@media screen and (min-width: 640px) and (max-width:882px) {
+  .div-carousel {
+    width: 630px;
+    margin-left: 8px;
+  }
+
+  .carousel-img {
+    width: 600px;
+    height: 400px
+  }
+
+  .main-heading {
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .nav-page-btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 3px;
+    margin-right: 3px;
+    width: 85px;
+    font-size: 15px;
+  }
+
+  .nav-page-btn:hover {
+    color: black;
+  }
+
+  .div-main-heading {
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .div-heading {
+    font-size: 17px;
+    font-weight: bolder;
+  }
+
+  .div-content {
+    margin-left: 12px;
+  }
+
+  .div-seatmap {
+    margin: 2px;
+    border: 2px solid gray;
+    padding: 8px;
+    width: 160px;
+    display: inline-table;
+  }
+
+  .div-seatmap-btn {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  .div-seatmap-btn-dummy {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: white;
+  }
+
+  .div-seatmap-btn-mark-area {
+    margin-left: 15px;
+    display: inline-table;
+    font-size: 10px;
+  }
+
+  .div-seatmap-btn-mark {
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+  }
+
+  .div-seatmap-textcontent {
+    display: inline-table;
+    margin-left: 15px;
+    font-size: 11px;
+  }
+
+
+}
+
+@media screen and (min-width: 883px) and (max-width:1049px) {
+  .div-carousel {
+    width: 900px;
+    margin-left: 20px;
+  }
+
+  .carousel-img {
+    width: 900px;
+    height: 400px
+  }
+
+  .main-heading {
+    margin-top: 10px;
+    color: white;
+  }
+
+  .nav-page-btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 3px;
+    margin-right: 3px;
+    width: 85px;
+    font-size: 15px;
+  }
+
+  .div-main-heading {
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .div-heading {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .div-content {
+    margin-left: 15px;
+  }
+
+  .div-seatmap {
+    margin: 5px;
+    border: 2px solid gray;
+    padding: 12px;
+    width: 220px;
+    display: inline-table;
+  }
+
+  .div-seatmap-btn {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .div-seatmap-btn-dummy {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+  }
+
+  .div-seatmap-btn-mark-area {
+    margin-left: 15px;
+    display: inline-table;
+    font-size: 15px;
+  }
+
+  .div-seatmap-btn-mark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+  }
+
+  .div-seatmap-textcontent {
+    display: inline-table;
+    margin-left: 20px;
+    font-size: 11px;
+  }
+
+}

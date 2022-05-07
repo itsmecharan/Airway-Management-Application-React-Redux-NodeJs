@@ -1,0 +1,81 @@
+.dashboard-toggle-btns {
+    margin-left: 500px;
+}
+
+.dashboard-ancillary {
+    margin: 10px;
+    /* width: 500px;
+    margin-left: 500px; */
+}
+
+.dashboard-ancillary-heading {
+    margin-left: 500px;
+}
+
+.save-ancillary-btn {
+    margin-left: 500px;
+    background: #66b2b2;
+    color: black;
+
+}
+
+.save-ancillary-btn:hover {
+    background: #66b2b2;
+    color: black;
+}
+
+@media screen and (min-width: 640px) and (max-width:882px) {
+    .dashboard-toggle-btns {
+        margin-left: 200px;
+    }
+
+    .dashboard-ancillary {
+        margin: 10px;
+        width: 500px;
+        margin-left: 0px;
+    }
+
+    .dashboard-ancillary-heading {
+        margin-left: 200px;
+    }
+
+    .save-ancillary-btn {
+        margin-left: 200px;
+        background: #66b2b2;
+        color: black;
+    }
+
+    .save-ancillary-btn:hover {
+        background: #66b2b2;
+        color: black;
+    }
+
+}
+
+@media screen and (min-width: 882px) and (max-width:1049px) {
+    .dashboard-toggle-btns {
+        margin-left: 250px;
+    }
+
+    .dashboard-ancillary {
+        margin: 10px;
+        width: 500px;
+        margin-left: 0px;
+    }
+
+    .dashboard-ancillary-heading {
+        margin-left: 250px;
+    }
+
+    .save-ancillary-btn {
+        margin-left: 300px;
+        background: #66b2b2;
+        color: black;
+    }
+
+    .save-ancillary-btn:hover {
+        background: #66b2b2;
+        color: black;
+    }
+
+}

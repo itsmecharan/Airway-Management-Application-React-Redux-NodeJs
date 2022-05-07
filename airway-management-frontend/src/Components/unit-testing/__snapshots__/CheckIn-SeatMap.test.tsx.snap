@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check In Seat Map Component Mounted Creates a snapshot 1`] = `
+<div>
+  <div
+    className="div-heading"
+  >
+    Passengers Seat Map
+  </div>
+  <div
+    className="div-seatmap"
+  />
+  <div
+    className="div-seatmap-btn-mark-area"
+  >
+    <button
+      className="div-seatmap-btn-mark"
+      disabled={true}
+      style={
+        Object {
+          "background": "#43BE5F",
+        }
+      }
+    />
+     : 
+    Checked In
+     
+    <br />
+    <button
+      className="div-seatmap-btn-mark"
+      disabled={true}
+      style={
+        Object {
+          "background": "white",
+        }
+      }
+    />
+     : 
+    Non Checked In
+    <br />
+    <button
+      className="div-seatmap-btn-mark"
+      disabled={true}
+      style={
+        Object {
+          "background": "#0080ff",
+        }
+      }
+    />
+     : 
+    Wheel Chaired Passengers
+     (Checked In)
+    <br />
+    <button
+      className="div-seatmap-btn-mark"
+      disabled={true}
+      style={
+        Object {
+          "background": "#f5504e",
+        }
+      }
+    />
+     : 
+    Passengers With Children
+     (Checked In)
+    <br />
+    <button
+      className="div-seatmap-btn-mark"
+      disabled={true}
+      style={
+        Object {
+          "background": "#686868",
+        }
+      }
+    />
+     : 
+    Seats Not Booked
+    <br />
+    <br />
+    <em
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+    >
+       * Click the seats to make Check In and Check out
+    </em>
+  </div>
+  <div
+    className="div-seatmap-textcontent"
+  />
+</div>
+`;
